@@ -17,6 +17,8 @@ public class CaveManController : MonoBehaviour
 
     private Vector2 throwDirection;
 
+    public bool inWater;
+
     
     //================================================================================================================//
     
@@ -181,7 +183,9 @@ public class CaveManController : MonoBehaviour
         if (moveDirection == Vector2Int.zero)
             return;
 
-        var posDelta = new Vector3(moveDirection.x, moveDirection.y, 0f) * (speed * Time.deltaTime) ;
+        var targetSpeed = inWater ? speed / 2f : speed;
+
+        var posDelta = new Vector3(moveDirection.x, moveDirection.y, 0f) * (targetSpeed * Time.deltaTime) ;
 
         transform.position += posDelta;
     }
@@ -196,6 +200,18 @@ public class CaveManController : MonoBehaviour
         
         Animator.SetBool("Moving", (moveDirection != Vector2Int.zero));
         Animator.SetBool("FaceCamera", facingCamera);
+    }
+    
+    //================================================================================================================//
+
+    public void SetInWater(bool inWater)
+    {
+        this.inWater = inWater;
+
+        if (isHoldingTorch && isTorchLit)
+            SetTorchLit(false);
+        
+        Animator.SetBool("InWater", inWater);
     }
     
     //================================================================================================================//
