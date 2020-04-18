@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3354797323806768253}
   - component: {fileID: 2852524590475225635}
   - component: {fileID: 3354797323806768254}
+  - component: {fileID: 6586607049198192087}
   - component: {fileID: 3354797323806768255}
   m_Layer: 0
   m_Name: Bush
@@ -45,6 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b1745a480103d47b906039763d2937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startOnFire: 0
+  startBurned: 0
+  burnForever: 0
   burnTime: 7
   burnCurve:
     serializedVersion: 2
@@ -72,9 +76,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   startColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
-  deadBushPrefab: {fileID: 2652142450959787585, guid: 4eb0a401e86064545bb2eb35f87b104b,
-    type: 3}
   firePrefab: {fileID: 938874835732306803, guid: 78a92084a40148f47bd206278c4f781c,
+    type: 3}
+  deadBushPrefab: {fileID: 2652142450959787585, guid: 4eb0a401e86064545bb2eb35f87b104b,
     type: 3}
 --- !u!212 &3354797323806768254
 SpriteRenderer:
@@ -127,6 +131,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6586607049198192087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354797323806768240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb39e89ed4a8a33468b6a9b0dd655983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLayer: 0
 --- !u!61 &3354797323806768255
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,0 +1,11 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public interface IFlammable
+{
+    bool isOnFire();
+
+    void RegisterFlammable();
+    void UnRegisterFlammable();
+}
