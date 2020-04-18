@@ -2,9 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CaveManController : MonoBehaviour
 {
+    public GameObject torchPrefab;
+    public float throwForce;
+    
     //================================================================================================================//
     
     [SerializeField]
@@ -49,6 +53,7 @@ public class CaveManController : MonoBehaviour
 
     private new GameObject gameObject;
     private new Transform transform;
+    private new Rigidbody2D rigidbody;
 
     [SerializeField]
     private Vector2Int moveDirection;
@@ -63,6 +68,7 @@ public class CaveManController : MonoBehaviour
 
         Animator = gameObject.GetComponent<Animator>();
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        rigidbody = gameObject.GetComponent<Rigidbody2D>();
 
         
         torchRenderer = TorchObject.GetComponent<SpriteRenderer>();
@@ -77,6 +83,9 @@ public class CaveManController : MonoBehaviour
         CheckInput();
 
         ApplyMotion();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            ThrowTorch();
     }
 
     private void LateUpdate()
@@ -154,6 +163,15 @@ public class CaveManController : MonoBehaviour
     }
     
     //================================================================================================================//
+
+    private void ThrowTorch()
+    {
+        var direction = new Vector2(facingRight ? 1f : -1f, facingCamera ? -1f : 1f);
+        
+        var temp = Instantiate(torchPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+        temp.AddForce(direction * throwForce);
+        temp.AddTorque(Random.Range(0f, 0.3f) *(Random.value > 0.5f ? 1f : -1), ForceMode2D.Force);
+    }
 
 
 }
