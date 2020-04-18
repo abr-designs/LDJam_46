@@ -6,6 +6,8 @@ using UnityEngine;
 public class LayerSetter : MonoBehaviour
 {
     [SerializeField]
+    private bool isStatic;
+    [SerializeField]
     private int currentLayer;
     [SerializeField]
     private int offset;
@@ -22,7 +24,15 @@ public class LayerSetter : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    private void LateUpdate()
+    {
+        if (isStatic)
+            return;
+        
+        SetLayer();
+    }
+
+    private void SetLayer()
     {
         currentLayer =  Mathf.RoundToInt(transform.position.y * -10f);
 

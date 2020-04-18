@@ -74,6 +74,252 @@ TextureImporter:
   - first:
       213: -2739879976043827936
     second: Bush_Dead
+  - first:
+      213: 1002885326063365427
+    second: Desert_Steps
+  - first:
+      213: -2781342463943708085
+    second: Ground_Steps_1
+  - first:
+      213: 7619099430958667953
+    second: World_Sheet_2
+  - first:
+      213: -4506139892034553348
+    second: Ground_TL
+  - first:
+      213: -2652941568161019441
+    second: Ground_T
+  - first:
+      213: -4343344345620467597
+    second: Ground_TR
+  - first:
+      213: 1651697636656426337
+    second: Ground_TL_Corner
+  - first:
+      213: -6261718739095180323
+    second: World_Sheet_7
+  - first:
+      213: -7991625334261127174
+    second: Ground_TR_Corner
+  - first:
+      213: -3520564872165597504
+    second: Boudler
+  - first:
+      213: 9018182850534838904
+    second: World_Sheet_10
+  - first:
+      213: -6444534763549648371
+    second: World_Sheet_11
+  - first:
+      213: 963254209104028605
+    second: World_Sheet_12
+  - first:
+      213: -2684218464073109458
+    second: Ground_L
+  - first:
+      213: 5600841641842044429
+    second: Ground
+  - first:
+      213: 8040380727926383824
+    second: Ground_R
+  - first:
+      213: -2440882824727467554
+    second: World_Sheet_16
+  - first:
+      213: -8521230570405221817
+    second: World_Sheet_17
+  - first:
+      213: -1038044854425873106
+    second: World_Sheet_18
+  - first:
+      213: 9006306193235690788
+    second: Bush
+  - first:
+      213: -5754020111854336972
+    second: Ground_BL
+  - first:
+      213: 1387442673027116158
+    second: Ground_B
+  - first:
+      213: 7779002210461501156
+    second: Ground_BR
+  - first:
+      213: -3902037334595972942
+    second: Ground_BL_Corner
+  - first:
+      213: -6610679483567269089
+    second: World_Sheet_24
+  - first:
+      213: -4714069381362954351
+    second: Ground_BR_Corner
+  - first:
+      213: -8435342394554845408
+    second: Bush_Dead
+  - first:
+      213: -699849708207384772
+    second: Water_TL
+  - first:
+      213: -489090533294339223
+    second: Water_T
+  - first:
+      213: 2637848670893087259
+    second: Water_TR
+  - first:
+      213: -8558501275591601444
+    second: Water_BR_Corner
+  - first:
+      213: 6242425512841376458
+    second: Water_T_Alt
+  - first:
+      213: 6082460862912994825
+    second: Water_BL_Corner
+  - first:
+      213: -6648202789111502159
+    second: Desert_TL
+  - first:
+      213: 9138659950552246331
+    second: Desert_T
+  - first:
+      213: -5944713446733279819
+    second: Desert_TR
+  - first:
+      213: -7995064749998335632
+    second: Water_L
+  - first:
+      213: 2734623496058356259
+    second: Water
+  - first:
+      213: -5137523285131508130
+    second: Water_R
+  - first:
+      213: -6580454482583286468
+    second: Water_L_Alt
+  - first:
+      213: -911384156277656372
+    second: Water_Default
+  - first:
+      213: 6938855037960193272
+    second: Water_R_Alt
+  - first:
+      213: -5429075545971127334
+    second: Desert_L
+  - first:
+      213: 5037421456604074528
+    second: Desert
+  - first:
+      213: 99898438495291784
+    second: Desert_R
+  - first:
+      213: -2289765379267777084
+    second: Water_BL
+  - first:
+      213: 3958910253547367956
+    second: Water_B
+  - first:
+      213: 7178288590045380397
+    second: Water_BR
+  - first:
+      213: 535303206950695203
+    second: Water_TR_Corner
+  - first:
+      213: 3126809794135031829
+    second: Water_B_Alt
+  - first:
+      213: 3485550661075188810
+    second: Water_TL_Corner
+  - first:
+      213: -1480084207885970036
+    second: Desert_BL
+  - first:
+      213: 9027025891335541069
+    second: Desert_B
+  - first:
+      213: -3682258615800603345
+    second: Desert_BR
+  - first:
+      213: 7630811367327340044
+    second: World_Sheet_54
+  - first:
+      213: -1140846676443606426
+    second: World_Sheet_55
+  - first:
+      213: 5873925291256999531
+    second: World_Sheet_56
+  - first:
+      213: 1505421370330859280
+    second: World_Sheet_57
+  - first:
+      213: -8355347349372151704
+    second: World_Sheet_58
+  - first:
+      213: 889390485334657285
+    second: World_Sheet_59
+  - first:
+      213: 1230983296607776920
+    second: Desert_TL_Corner
+  - first:
+      213: -4993575196843182589
+    second: World_Sheet_61
+  - first:
+      213: -1040846011556142645
+    second: Desert_TR_Corner
+  - first:
+      213: -7188222881590756820
+    second: World_Sheet_63
+  - first:
+      213: -8278514537571776860
+    second: World_Sheet_64
+  - first:
+      213: 616867472144909222
+    second: World_Sheet_65
+  - first:
+      213: 3799334797211838795
+    second: World_Sheet_66
+  - first:
+      213: -7606225739510578089
+    second: World_Sheet_67
+  - first:
+      213: 1488630889948089304
+    second: World_Sheet_68
+  - first:
+      213: 1281659525726651188
+    second: World_Sheet_69
+  - first:
+      213: -8117993018829659153
+    second: World_Sheet_70
+  - first:
+      213: -2085917932780975774
+    second: World_Sheet_71
+  - first:
+      213: 2350189487856210894
+    second: World_Sheet_72
+  - first:
+      213: -2047138336573105057
+    second: World_Sheet_73
+  - first:
+      213: 3915361611294153995
+    second: World_Sheet_74
+  - first:
+      213: 4610649099300716432
+    second: World_Sheet_75
+  - first:
+      213: 1020453846171210041
+    second: World_Sheet_76
+  - first:
+      213: -2691427010092997991
+    second: Desert_BL_Corner
+  - first:
+      213: 1277414745484217621
+    second: World_Sheet_78
+  - first:
+      213: -8605892645317055880
+    second: Desert_BR_Corner
+  - first:
+      213: 7466404550520740652
+    second: Exit
+  - first:
+      213: 7470287313850086126
+    second: Ground_Steps_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -171,10 +417,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass
+      name: Ground_TL
       rect:
         serializedVersion: 2
-        x: 0
+        x: 24
         y: 72
         width: 8
         height: 8
@@ -185,17 +431,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2b1627416ffd9760800000000000000
-      internalID: 7466404550520740652
+      spriteID: cf9301b84a9f671c0800000000000000
+      internalID: -4506139892034553348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock
+      name: Ground_T
       rect:
         serializedVersion: 2
-        x: 8
+        x: 32
         y: 72
         width: 8
         height: 8
@@ -206,17 +452,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee234209bbacba760800000000000000
-      internalID: 7470287313850086126
+      spriteID: fc905eb13bbde2bd0800000000000000
+      internalID: -2652941568161019441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water
+      name: Ground_TR
       rect:
         serializedVersion: 2
-        x: 16
+        x: 40
         y: 72
         width: 8
         height: 8
@@ -227,14 +473,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 984dda14a27ae13f0800000000000000
-      internalID: -928120673259367287
+      spriteID: 3703716645759b3c0800000000000000
+      internalID: -4343344345620467597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boulder
+      name: Ground_TL_Corner
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d224ddf320ce610800000000000000
+      internalID: 1651697636656426337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb23d89bf7e919a0800000000000000
+      internalID: -6261718739095180323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_TR_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af76a55991b081190800000000000000
+      internalID: -7991625334261127174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boudler
       rect:
         serializedVersion: 2
         x: 72
@@ -248,8 +557,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e600f2d47115bce0800000000000000
-      internalID: -1390185716521105691
+      spriteID: 0ced9d9c6e0742fc0800000000000000
+      internalID: -3520564872165597504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_L
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20b06d478dbfbad0800000000000000
+      internalID: -2684218464073109458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ee5397ccf2abd40800000000000000
+      internalID: 5600841641842044429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_R
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4e2fa1cab259f60800000000000000
+      internalID: 8040380727926383824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed964c5d00e302ed0800000000000000
+      internalID: -2440882824727467554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a2cc191f18eb980800000000000000
+      internalID: -8521230570405221817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25160764bf1891f0800000000000000
+      internalID: -1038044854425873106
       vertices: []
       indices: 
       edges: []
@@ -269,8 +704,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca0aa8191bdaf270800000000000000
-      internalID: 8285175365335911109
+      spriteID: 425c63ae3c3dcfc70800000000000000
+      internalID: 9006306193235690788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_BL
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340872c13d9520b0800000000000000
+      internalID: -5754020111854336972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_B
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ceff792cf214310800000000000000
+      internalID: 1387442673027116158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_BR
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e64985ab4194fb60800000000000000
+      internalID: 7779002210461501156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_BL_Corner
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b05813d7bd29d9c0800000000000000
+      internalID: -3902037334595972942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b920ad8062244a0800000000000000
+      internalID: -6610679483567269089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_BR_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fc055bfd2449eb0800000000000000
+      internalID: -4714069381362954351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Dead
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027f3c5d8c4afea80800000000000000
+      internalID: -8435342394554845408
       vertices: []
       indices: 
       edges: []
@@ -287,15 +869,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 2, y: -2}
-        - {x: 2, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: -2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ac03b5cf36afd20800000000000000
-      internalID: 3313070411397253639
+      spriteID: c37532af562a946f0800000000000000
+      internalID: -699849708207384772
       vertices: []
       indices: 
       edges: []
@@ -313,14 +891,14 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -4, y: -2}
+      - - {x: -4, y: 0}
         - {x: -4, y: -4}
         - {x: 4, y: -4}
-        - {x: 4, y: -2}
+        - {x: 4, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 92512f0e253717c60800000000000000
-      internalID: 7814153628262995241
+      spriteID: 96b0cf350c66639f0800000000000000
+      internalID: -489090533294339223
       vertices: []
       indices: 
       edges: []
@@ -337,161 +915,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: -2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d58ff4c3e4a0b0d10800000000000000
-      internalID: 2092777782979328093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_L
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 2, y: 4}
-        - {x: 2, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39be9f91bfc164190800000000000000
-      internalID: -7978657825042076781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_BL
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 2, y: 4}
-        - {x: 2, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d5dd0ca8d79ce340800000000000000
-      internalID: 4894453851900204504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 534a5877623070ff0800000000000000
-      internalID: -70083805452065739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_B
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17113e94043b9b370800000000000000
-      internalID: 8338893273752080753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_R
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 40
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e5f38f8c0f1bb6d0800000000000000
-      internalID: -2973748990140221980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_BR
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: 2}
-        - {x: -2, y: 2}
-        - {x: -2, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f590da35e9680f040800000000000000
-      internalID: 4679388027404749151
+      spriteID: b1a91d7e3658b9420800000000000000
+      internalID: 2637848670893087259
       vertices: []
       indices: 
       edges: []
@@ -508,17 +936,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 2, y: 4}
-        - {x: 2, y: -2}
-        - {x: -4, y: -2}
-        - {x: -4, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6d639811dce88df0800000000000000
-      internalID: -177631802476499601
+      spriteID: cd292aa4f681a3980800000000000000
+      internalID: -8558501275591601444
       vertices: []
       indices: 
       edges: []
@@ -536,14 +958,14 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -4, y: -2}
+      - - {x: -4, y: 0}
         - {x: -4, y: -4}
         - {x: 4, y: -4}
-        - {x: 4, y: -2}
+        - {x: 4, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 7b25fdbc0d716a090800000000000000
-      internalID: -8023699500572912969
+      spriteID: ac2febd1eec81a650800000000000000
+      internalID: 6242425512841376458
       vertices: []
       indices: 
       edges: []
@@ -560,17 +982,137 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 4}
-        - {x: -4, y: 4}
-        - {x: -4, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: -2}
-        - {x: -2, y: -2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af3892cf7ce84df0800000000000000
-      internalID: -195646550320857180
+      spriteID: 90e1526bded396450800000000000000
+      internalID: 6082460862912994825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_TL
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba6f3879c6dcb3a0800000000000000
+      internalID: -6648202789111502159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_T
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3861cb6eca03de70800000000000000
+      internalID: 9138659950552246331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_TR
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd89fbdd92208da0800000000000000
+      internalID: -5944713446733279819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_L
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0791a1438f2db0190800000000000000
+      internalID: -7995064749998335632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322cefcb49553f520800000000000000
+      internalID: 2734623496058356259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_R
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56407cbac9d3b8b0800000000000000
+      internalID: -5137523285131508130
       vertices: []
       indices: 
       edges: []
@@ -587,15 +1129,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 2, y: 4}
-        - {x: 2, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c3e0d0735c0ebb0800000000000000
-      internalID: -4908706753600930719
+      spriteID: c3d0ff843878da4a0800000000000000
+      internalID: -6580454482583286468
       vertices: []
       indices: 
       edges: []
@@ -612,67 +1150,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 2}
-        - {x: -2, y: -2}
-        - {x: 2, y: -2}
-        - {x: 2, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d15b4a6229264390800000000000000
-      internalID: -7834529273975451184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_TR_Corner
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: 2}
-        - {x: 2, y: 2}
-        - {x: 2, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 656ae6bf5f88e9f80800000000000000
-      internalID: -8097884489898875306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_B_Alt
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: 4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1356a12e107e3e0800000000000000
-      internalID: -2024647436862672410
+      spriteID: cc4b62740fc1a53f0800000000000000
+      internalID: -911384156277656372
       vertices: []
       indices: 
       edges: []
@@ -689,15 +1171,179 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 4}
-        - {x: -2, y: -4}
-        - {x: 4, y: -4}
-        - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cde286d66ea10ab80800000000000000
-      internalID: -8385672929183519012
+      spriteID: 8f40c85b4e3cb4060800000000000000
+      internalID: 6938855037960193272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_L
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb81af2e8c08a4b0800000000000000
+      internalID: -5429075545971127334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02211d8102488e540800000000000000
+      internalID: 5037421456604074528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_R
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889c02cb919e26100800000000000000
+      internalID: 99898438495291784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_BL
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cda1cde48e1930e0800000000000000
+      internalID: -2289765379267777084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_B
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ea75086efd0f630800000000000000
+      internalID: 3958910253547367956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_BR
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ff4e0c0776e9360800000000000000
+      internalID: 7178288590045380397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_TR_Corner
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3217c693e67cd6700800000000000000
+      internalID: 535303206950695203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_B_Alt
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51081a3f0f8a46b20800000000000000
+      internalID: 3126809794135031829
       vertices: []
       indices: 
       edges: []
@@ -714,27 +1360,693 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: 4}
-        - {x: -4, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec619f6c5302a91e0800000000000000
-      internalID: -2190402853418756402
+      spriteID: a4cb308ebd92f5030800000000000000
+      internalID: 3485550661075188810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bush_Dead
+      name: Desert_BL
       rect:
         serializedVersion: 2
-        x: 72
-        y: 56
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c859a47314fa57be0800000000000000
+      internalID: -1480084207885970036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_B
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d411f4f8830764d70800000000000000
+      internalID: 9027025891335541069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_BR
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d55126c4df5ecc0800000000000000
+      internalID: -3682258615800603345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c061f81428616e960800000000000000
+      internalID: 7630811367327340044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662d4630ef5ea20f0800000000000000
+      internalID: -1140846676443606426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e6e865eef548150800000000000000
+      internalID: 5873925291256999531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0174adf92c454e410800000000000000
+      internalID: 1505421370330859280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868dba1bad7db0c80800000000000000
+      internalID: -8355347349372151704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5090cf82fefb75c00800000000000000
+      internalID: 889390485334657285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_TL_Corner
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890feb649c4551110800000000000000
+      internalID: 1230983296607776920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306f5f8c0d143bab0800000000000000
+      internalID: -4993575196843182589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_TR_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1605f211c2e81f0800000000000000
+      internalID: -1040846011556142645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab270cf5d4e3c90800000000000000
+      internalID: -7188222881590756820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a68028b3eecc1d80800000000000000
+      internalID: -8278514537571776860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3c0b692bd8f8800800000000000000
+      internalID: 616867472144909222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49a79a4ed2f9b430800000000000000
+      internalID: 3799334797211838795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7540a0b4df1417690800000000000000
+      internalID: -7606225739510578089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db870548eda8a410800000000000000
+      internalID: 1488630889948089304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433cee15c8e59c110800000000000000
+      internalID: 1281659525726651188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3ae8f3c58175f80800000000000000
+      internalID: -8117993018829659153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26909f911b45d03e0800000000000000
+      internalID: -2085917932780975774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3d68a23ec8d9020800000000000000
+      internalID: 2350189487856210894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cd972778a1793e0800000000000000
+      internalID: -2047138336573105057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d936814a8265630800000000000000
+      internalID: 3915361611294153995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f3bc37de05cff30800000000000000
+      internalID: 4610649099300716432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93157b2dd51692e00800000000000000
+      internalID: 1020453846171210041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_BL_Corner
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992e384e46126aad0800000000000000
+      internalID: -2691427010092997991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dce6761f94ab110800000000000000
+      internalID: 1277414745484217621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_BR_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87aeabc2c3ab19880800000000000000
+      internalID: -8605892645317055880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Steps
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d657af3e6faed00800000000000000
+      internalID: 1002885326063365427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Steps_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42fce5e3cfa669d0800000000000000
+      internalID: -2781342463943708085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b1627416ffd9760800000000000000
+      internalID: 7466404550520740652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Steps_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
         width: 8
         height: 8
       alignment: 0
@@ -744,8 +2056,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02da3b4adadf9f9d0800000000000000
-      internalID: -2739879976043827936
+      spriteID: ee234209bbacba760800000000000000
+      internalID: 7470287313850086126
       vertices: []
       indices: 
       edges: []

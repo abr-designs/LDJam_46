@@ -256,6 +256,11 @@ public class CaveManController : MonoBehaviour
 
     //================================================================================================================//
 
+    public void SetPosition(Vector3 position)
+    {
+        cavemanObject.transform.position = position;
+    }
+
     #if UNITY_EDITOR
 
     [ContextMenu("Snuff Out")]

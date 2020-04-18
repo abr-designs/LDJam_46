@@ -53,6 +53,9 @@ public class Torch : Interactable, IFlammable
         
         this.isLit = isLit;
         renderer.sprite = isLit ? litSprite : outSprite;
+
+        if (isLit)
+            RegisterFlammable();
     }
     
     public bool isOnFire()

@@ -7,7 +7,7 @@ public class Boulder : Interactable
 {
     private bool checkDirection;
     private bool ignoreInput;
-    private const float timeCheck = 0.4f;
+    private const float timeCheck = 0.25f;
 
     private float timer = 0f;
     private Vector2Int lastInput;
@@ -82,8 +82,31 @@ public class Boulder : Interactable
 
         //TODO Move the rock in that direction
         //ignoreInput = true;
-        transform.position += dir * 0.4f;
+        //transform.position += dir * 0.4f;
+        var target = transform.position + dir * 0.4f;
+        StartCoroutine(MoveBoulderCoroutine(target, 0.3f));
 
         lastInput = currentInput = Vector2Int.zero;
+    }
+
+    private bool isMoving;
+    private IEnumerator MoveBoulderCoroutine(Vector2 targetPosition, float time)
+    {
+        ignoreInput = true;
+        var _t = 0f;
+        var startPosition = transform.position;
+        
+        
+        while (_t < time)
+        {
+            transform.position = Vector2.Lerp(startPosition, targetPosition, _t / time);
+
+            _t += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = targetPosition;
+
+        ignoreInput = false;
     }
 }
