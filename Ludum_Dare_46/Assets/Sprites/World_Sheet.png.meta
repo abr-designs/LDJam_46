@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -1390185716521105691
     second: Boulder
+  - first:
+      213: 8285175365335911109
+    second: Bush
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -199,6 +202,27 @@ TextureImporter:
       bones: []
       spriteID: 5e600f2d47115bce0800000000000000
       internalID: -1390185716521105691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca0aa8191bdaf270800000000000000
+      internalID: 8285175365335911109
       vertices: []
       indices: 
       edges: []

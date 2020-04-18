@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 374271939606639724
     second: Torch_Free
+  - first:
+      213: 4551398226287638650
+    second: Torch_Free_Out
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,6 +121,27 @@ TextureImporter:
       bones: []
       spriteID: c6476a9985ea13500800000000000000
       internalID: 374271939606639724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch_Free_Out
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78b73d8290d92f30800000000000000
+      internalID: 4551398226287638650
       vertices: []
       indices: 
       edges: []
