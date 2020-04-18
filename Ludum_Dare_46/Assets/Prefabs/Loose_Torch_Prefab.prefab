@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8031701135004900605}
+  - component: {fileID: 3825832931386397066}
   - component: {fileID: 8031701135004900354}
   - component: {fileID: 8031701135004900355}
   - component: {fileID: 8031701135004900352}
   - component: {fileID: 3032043402001414799}
-  - component: {fileID: 3825832931386397066}
   m_Layer: 9
   m_Name: Loose_Torch_Prefab
   m_TagString: Torch
@@ -35,6 +35,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3825832931386397066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031701135004900353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231f353145c9c5a40ac5374b8c9cd120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbodyCollider: {fileID: 8031701135004900355}
+  litSprite: {fileID: 374271939606639724, guid: 63ff52572e57f8f4a870bb93a9111647,
+    type: 3}
+  outSprite: {fileID: -901176849404160282, guid: a9bd904157b5ddf4c87e42b352ad0cf4,
+    type: 3}
 --- !u!212 &8031701135004900354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -158,16 +175,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &3825832931386397066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8031701135004900353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231f353145c9c5a40ac5374b8c9cd120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbodyCollider: {fileID: 8031701135004900355}

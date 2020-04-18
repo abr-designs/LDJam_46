@@ -13,7 +13,8 @@ public class CaveManController : MonoBehaviour
 
     public bool isHoldingTorch;
     public bool canPickupTorch;
-    
+    public bool isTorchLit { get; private set; }
+
     private Vector2 throwDirection;
 
     
@@ -55,6 +56,10 @@ public class CaveManController : MonoBehaviour
     private GameObject TorchObject;
 
     private SpriteRenderer torchRenderer;
+    [SerializeField]
+    private Sprite litTorchSprite;
+    [SerializeField]
+    private Sprite outTorchSprite;
     
     private Animator Animator;
     private SpriteRenderer SpriteRenderer;
@@ -90,6 +95,7 @@ public class CaveManController : MonoBehaviour
         facingCamera = true;
         isHoldingTorch = true;
         canPickupTorch = false;
+        isTorchLit = true;
     }
 
     // Update is called once per frame
@@ -208,7 +214,7 @@ public class CaveManController : MonoBehaviour
         var direction = throwDirection;
         
         var temp = Instantiate(torchPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
-        temp.GetComponent<Torch>().Init(collider);
+        temp.GetComponent<Torch>().Init(collider, isTorchLit);
         
         //TODO Move the force add to the torch object
         temp.AddForce(direction * throwForce);
@@ -221,5 +227,22 @@ public class CaveManController : MonoBehaviour
         SetIsHoldingTorch(true);
     }
 
+    public void SetTorchLit(bool onFire)
+    {
+        isTorchLit = onFire;
 
+        torchRenderer.sprite = isTorchLit ? litTorchSprite : outTorchSprite;
+    }
+
+    //================================================================================================================//
+
+    #if UNITY_EDITOR
+
+    [ContextMenu("Snuff Out")]
+    public void BurnOutTorch()
+    {
+        SetTorchLit(false);
+    }
+    
+    #endif
 }

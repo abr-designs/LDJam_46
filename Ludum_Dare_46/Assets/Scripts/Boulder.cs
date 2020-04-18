@@ -3,21 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boulder : MonoBehaviour
+public class Boulder : Interactable
 {
-    private static CaveManController CaveManController
-    {
-        get
-        {
-            if (!_caveManController)
-                _caveManController = FindObjectOfType<CaveManController>();
-
-            return _caveManController;
-        }
-    }
-
-    private static CaveManController _caveManController;
-
     private bool checkDirection;
     private bool ignoreInput;
     private const float timeCheck = 0.4f;
@@ -41,7 +28,7 @@ public class Boulder : MonoBehaviour
         if (!checkDirection)
             return;
 
-        currentInput = CaveManController.moveDirection;
+        currentInput = CaveMan.moveDirection;
 
         if (currentInput == Vector2Int.zero)
         {
