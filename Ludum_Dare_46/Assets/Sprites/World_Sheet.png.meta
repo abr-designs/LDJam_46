@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -70083805452065739
     second: World_Sheet_5
+  - first:
+      213: -1390185716521105691
+    second: Boulder
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +66,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -175,6 +178,27 @@ TextureImporter:
       bones: []
       spriteID: 984dda14a27ae13f0800000000000000
       internalID: -928120673259367287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e600f2d47115bce0800000000000000
+      internalID: -1390185716521105691
       vertices: []
       indices: 
       edges: []

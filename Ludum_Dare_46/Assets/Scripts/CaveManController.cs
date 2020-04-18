@@ -4,10 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+//Use this guide: https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system
+
 public class CaveManController : MonoBehaviour
 {
     public GameObject torchPrefab;
     public float throwForce;
+
+    public bool isHoldingTorch;
+    public bool canPickupTorch;
+    
+    private Vector2 throwDirection;
+
     
     //================================================================================================================//
     
@@ -54,13 +62,17 @@ public class CaveManController : MonoBehaviour
     private new GameObject gameObject;
     private new Transform transform;
     private new Rigidbody2D rigidbody;
+    private new Collider2D collider;
 
-    [SerializeField]
-    private Vector2Int moveDirection;
-    
+    //[SerializeField]
+    public Vector2Int moveDirection => _moveDirection;
+    public Vector2Int _moveDirection;
+
+
     //================================================================================================================//
     
     // Start is called before the first frame update
+    
     private void Start()
     {
         gameObject = cavemanObject;
@@ -69,12 +81,15 @@ public class CaveManController : MonoBehaviour
         Animator = gameObject.GetComponent<Animator>();
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        collider = gameObject.GetComponent<Collider2D>();
 
         
         torchRenderer = TorchObject.GetComponent<SpriteRenderer>();
 
         facingRight = true;
         facingCamera = true;
+        isHoldingTorch = true;
+        canPickupTorch = false;
     }
 
     // Update is called once per frame
@@ -85,12 +100,23 @@ public class CaveManController : MonoBehaviour
         ApplyMotion();
 
         if (Input.GetKeyDown(KeyCode.Space))
-            ThrowTorch();
+        {
+            if(isHoldingTorch)
+                ThrowTorch();
+            else if (canPickupTorch)
+                PickupTorch();
+        }
+            
     }
 
     private void LateUpdate()
     {
         UpdateAnimations();
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(other.gameObject.name, other.gameObject);
     }
 
     //================================================================================================================//
@@ -101,42 +127,46 @@ public class CaveManController : MonoBehaviour
         {
             facingCamera = false;
             facingRight = _facingRight;
-            moveDirection.y = 1;
+            _moveDirection.y = 1;
+            throwDirection = Vector2.up;
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
-            moveDirection.y = 0;
+            _moveDirection.y = 0;
         }
         
         if (Input.GetKeyDown(KeyCode.S))
         {
             facingCamera = true;
             facingRight = _facingRight;
-            moveDirection.y = -1;
+            _moveDirection.y = -1;
+            throwDirection = Vector2.down;
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            moveDirection.y = 0;
+            _moveDirection.y = 0;
         }
         
         if (Input.GetKeyDown(KeyCode.A))
         {
-            moveDirection.x = -1;
+            _moveDirection.x = -1;
             facingRight = false;
+            throwDirection = Vector2.left;
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            moveDirection.x = 0;
+            _moveDirection.x = 0;
         }
         
         if (Input.GetKeyDown(KeyCode.D))
         {
-            moveDirection.x = 1;
+            _moveDirection.x = 1;
             facingRight = true;
+            throwDirection = Vector2.right;
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            moveDirection.x = 0;
+            _moveDirection.x = 0;
         }
     }
 
@@ -164,13 +194,31 @@ public class CaveManController : MonoBehaviour
     
     //================================================================================================================//
 
+    private void SetIsHoldingTorch(bool isHoldingTorch)
+    {
+        this.isHoldingTorch = isHoldingTorch;
+        
+        TorchObject.SetActive(isHoldingTorch);
+    }
+
     private void ThrowTorch()
     {
-        var direction = new Vector2(facingRight ? 1f : -1f, facingCamera ? -1f : 1f);
+        //isHoldingTorch = false;
+        SetIsHoldingTorch(false);
+        var direction = throwDirection;
         
         var temp = Instantiate(torchPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+        temp.GetComponent<Torch>().Init(collider);
+        
+        //TODO Move the force add to the torch object
         temp.AddForce(direction * throwForce);
         temp.AddTorque(Random.Range(0f, 0.3f) *(Random.value > 0.5f ? 1f : -1), ForceMode2D.Force);
+    }
+
+    private void PickupTorch()
+    {
+        //isHoldingTorch = true;
+        SetIsHoldingTorch(true);
     }
 
 
