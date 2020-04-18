@@ -18,6 +18,12 @@ public class Bush : Interactable
     [SerializeField]
     private Color endColor;
 
+    [SerializeField] 
+    private GameObject deadBushPrefab;
+
+    private BurnedBush _burnedBush;
+    
+
     private float timer;
     
     [SerializeField]
@@ -49,6 +55,18 @@ public class Bush : Interactable
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            if (burned && !onFire)
+            {
+                GetComponent<Collider2D>().enabled = false;
+                //TODO Play animation
+                _burnedBush.BreakBush(() =>
+                {
+                    Destroy(gameObject);
+                });
+                return;
+            }
+            
+            
             if (onFire && CaveMan.isHoldingTorch && !CaveMan.isTorchLit)
                 CaveMan.SetTorchLit(true);
 
@@ -80,11 +98,20 @@ public class Bush : Interactable
     {
         if (timer >= burnTime)
         {
+            burned = true;
+            renderer.sprite = null;
+
+            _burnedBush = Instantiate(deadBushPrefab, transform.position, Quaternion.identity)
+                .GetComponent<BurnedBush>();
+            
+            
+            
             //TODO Change the sprite of the bush to burned one, disable collider
             fire.BurnOut(() =>
             {
-                burned = true;
+                
                 onFire = false;
+                
             });
 
             return;

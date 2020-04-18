@@ -4564,7 +4564,7 @@ MonoBehaviour:
     type: 3}
   throwForce: 200
   isHoldingTorch: 0
-  canPickupTorch: 0
+  canPickupTorch: {fileID: 0}
   inWater: 0
   speed: 4
   cavemanObject: {fileID: 1894271549}

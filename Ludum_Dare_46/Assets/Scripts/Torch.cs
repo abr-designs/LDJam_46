@@ -40,13 +40,13 @@ public class Torch : Interactable
         if (!other.CompareTag("Player"))
             return;
 
-        CaveMan.canPickupTorch = true;
+        CaveMan.canPickupTorch = this;
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
 
-        CaveMan.canPickupTorch = false;
+        CaveMan.canPickupTorch = null;
     }
 }

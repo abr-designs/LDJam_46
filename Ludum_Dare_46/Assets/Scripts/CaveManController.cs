@@ -12,7 +12,7 @@ public class CaveManController : MonoBehaviour
     public float throwForce;
 
     public bool isHoldingTorch;
-    public bool canPickupTorch;
+    public Torch canPickupTorch;
     public bool isTorchLit { get; private set; }
 
     private Vector2 throwDirection;
@@ -96,7 +96,7 @@ public class CaveManController : MonoBehaviour
         facingRight = true;
         facingCamera = true;
         isHoldingTorch = true;
-        canPickupTorch = false;
+        canPickupTorch = null;
         isTorchLit = true;
     }
 
@@ -241,6 +241,10 @@ public class CaveManController : MonoBehaviour
     {
         //isHoldingTorch = true;
         SetIsHoldingTorch(true);
+        SetTorchLit(canPickupTorch.isLit);
+        
+        Destroy(canPickupTorch.gameObject);
+        canPickupTorch = null;
     }
 
     public void SetTorchLit(bool onFire)

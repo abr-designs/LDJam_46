@@ -71,6 +71,9 @@ TextureImporter:
   - first:
       213: -2190402853418756402
     second: Water_TL_Corner
+  - first:
+      213: -2739879976043827936
+    second: Bush_Dead
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -722,6 +725,27 @@ TextureImporter:
       bones: []
       spriteID: ec619f6c5302a91e0800000000000000
       internalID: -2190402853418756402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Dead
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02da3b4adadf9f9d0800000000000000
+      internalID: -2739879976043827936
       vertices: []
       indices: 
       edges: []
