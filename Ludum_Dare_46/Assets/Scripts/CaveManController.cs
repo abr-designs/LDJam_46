@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CaveManController : MonoBehaviour
 {
+    //================================================================================================================//
     
     [SerializeField]
     private float speed;
@@ -14,11 +16,10 @@ public class CaveManController : MonoBehaviour
     #region Facing Direction
     private bool facingCamera
     {
-        get => _facingCamera;
-        set => _facingCamera = value;
+        get;
+        set;
         //TODO Need to set the animator value here
     }
-    private bool _facingCamera;
 
     private bool facingRight
     {
@@ -26,7 +27,10 @@ public class CaveManController : MonoBehaviour
         set
         {
             _facingRight = value;
-
+            if(facingCamera)
+                SpriteRenderer.flipX = !facingRight;
+            else
+                SpriteRenderer.flipX = facingRight;
         }
     }
     private bool _facingRight;
@@ -35,6 +39,11 @@ public class CaveManController : MonoBehaviour
     [SerializeField]
     private GameObject cavemanObject;
 
+    [SerializeField] 
+    private GameObject TorchObject;
+
+    private SpriteRenderer torchRenderer;
+    
     private Animator Animator;
     private SpriteRenderer SpriteRenderer;
 
@@ -44,6 +53,7 @@ public class CaveManController : MonoBehaviour
     [SerializeField]
     private Vector2Int moveDirection;
     
+    //================================================================================================================//
     
     // Start is called before the first frame update
     private void Start()
@@ -54,6 +64,9 @@ public class CaveManController : MonoBehaviour
         Animator = gameObject.GetComponent<Animator>();
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
+        
+        torchRenderer = TorchObject.GetComponent<SpriteRenderer>();
+
         facingRight = true;
         facingCamera = true;
     }
@@ -63,14 +76,22 @@ public class CaveManController : MonoBehaviour
     {
         CheckInput();
 
+        ApplyMotion();
+    }
+
+    private void LateUpdate()
+    {
         UpdateAnimations();
     }
+
+    //================================================================================================================//
 
     private void CheckInput()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
             facingCamera = false;
+            facingRight = _facingRight;
             moveDirection.y = 1;
         }
         else if (Input.GetKeyUp(KeyCode.W))
@@ -81,6 +102,7 @@ public class CaveManController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             facingCamera = true;
+            facingRight = _facingRight;
             moveDirection.y = -1;
         }
         else if (Input.GetKeyUp(KeyCode.S))
@@ -107,43 +129,31 @@ public class CaveManController : MonoBehaviour
         {
             moveDirection.x = 0;
         }
+    }
 
-        /*moving = false;
-        if (Input.GetKey(KeyCode.W))
-        {
-            facingCamera = false;
-            moving = true;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            facingCamera = true;
-            moving = true;
-        }
-        
-        if (Input.GetKey(KeyCode.A))
-        {
-            facingRight = false;
-            moving = true;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            facingRight = true;
-            moving = true;
-        }*/
+    private void ApplyMotion()
+    {
+        if (moveDirection == Vector2Int.zero)
+            return;
+
+        var posDelta = new Vector3(moveDirection.x, moveDirection.y, 0f) * (speed * Time.deltaTime) ;
+
+        transform.position += posDelta;
     }
 
     private void UpdateAnimations()
     {
+        /*//This needs to update 
         if(facingCamera)
             SpriteRenderer.flipX = !facingRight;
         else
-            SpriteRenderer.flipX = facingRight;
+            SpriteRenderer.flipX = facingRight;*/
         
         Animator.SetBool("Moving", (moveDirection != Vector2Int.zero));
         Animator.SetBool("FaceCamera", facingCamera);
     }
     
-    
+    //================================================================================================================//
 
 
 }
