@@ -72,9 +72,12 @@ public class LevelManager : MonoBehaviour
     {
         if (activeFlammables == null)
             activeFlammables = new List<IFlammable>();
-        
-        if(activeFlammables.Contains(flammable))
-            throw new Exception("Flammable already registered");
+
+        if (activeFlammables.Contains(flammable))
+        {
+            Debug.LogError("Flammable already registered");
+            return;
+        }
         
         activeFlammables.Add(flammable);
     }
@@ -107,7 +110,7 @@ public class LevelManager : MonoBehaviour
             unloadLevel();
 
         currentLevelIndex = index;
-        Debug.Log(Levels[index].startPosition.position);
+        //Debug.Log(Levels[index].startPosition.position);
         _caveManController.SetPosition(Levels[index].startPosition.position);
         activeLevel = Instantiate(Levels[index].gameObject, gameParentObject.transform, true);
         

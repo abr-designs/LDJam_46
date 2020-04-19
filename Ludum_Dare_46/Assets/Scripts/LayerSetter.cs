@@ -21,6 +21,9 @@ public class LayerSetter : MonoBehaviour
         transform = gameObject.transform;
         
         renderer = GetComponent<SpriteRenderer>();
+        
+        if(isStatic)
+            SetLayer();
     }
 
     // Update is called once per frame

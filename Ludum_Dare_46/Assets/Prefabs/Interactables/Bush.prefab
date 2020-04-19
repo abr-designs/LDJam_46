@@ -49,6 +49,7 @@ MonoBehaviour:
   startOnFire: 0
   startBurned: 0
   burnForever: 0
+  fireSpreads: 1
   burnTime: 7
   burnCurve:
     serializedVersion: 2
@@ -143,7 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb39e89ed4a8a33468b6a9b0dd655983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStatic: 1
   currentLayer: 0
+  offset: 0
 --- !u!61 &3354797323806768255
 BoxCollider2D:
   m_ObjectHideFlags: 0

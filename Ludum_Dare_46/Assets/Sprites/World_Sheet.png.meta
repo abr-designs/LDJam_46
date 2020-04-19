@@ -238,22 +238,22 @@ TextureImporter:
     second: Desert_BR
   - first:
       213: 7630811367327340044
-    second: World_Sheet_54
+    second: Ground_Hole_TL
   - first:
       213: -1140846676443606426
-    second: World_Sheet_55
+    second: Ground_Hole_T
   - first:
       213: 5873925291256999531
-    second: World_Sheet_56
+    second: Ground_Hole_TR
   - first:
       213: 1505421370330859280
-    second: World_Sheet_57
+    second: Ground_Hole_TL_Corner
   - first:
       213: -8355347349372151704
     second: World_Sheet_58
   - first:
       213: 889390485334657285
-    second: World_Sheet_59
+    second: Ground_Hole_TR_Corner
   - first:
       213: 1230983296607776920
     second: Desert_TL_Corner
@@ -265,10 +265,10 @@ TextureImporter:
     second: Desert_TR_Corner
   - first:
       213: -7188222881590756820
-    second: World_Sheet_63
+    second: Ground_Hole_L
   - first:
       213: -8278514537571776860
-    second: World_Sheet_64
+    second: Ground_Hole_R
   - first:
       213: 616867472144909222
     second: World_Sheet_65
@@ -289,22 +289,22 @@ TextureImporter:
     second: World_Sheet_70
   - first:
       213: -2085917932780975774
-    second: World_Sheet_71
+    second: Ground_Hole_BL
   - first:
       213: 2350189487856210894
-    second: World_Sheet_72
+    second: Ground_Hole_B
   - first:
       213: -2047138336573105057
-    second: World_Sheet_73
+    second: Ground_Hole_BR
   - first:
       213: 3915361611294153995
-    second: World_Sheet_74
+    second: Ground_Hole_BL_Corner
   - first:
       213: 4610649099300716432
     second: World_Sheet_75
   - first:
       213: 1020453846171210041
-    second: World_Sheet_76
+    second: Ground_Hole_BR_Corner
   - first:
       213: -2691427010092997991
     second: Desert_BL_Corner
@@ -320,6 +320,12 @@ TextureImporter:
   - first:
       213: 7470287313850086126
     second: Ground_Steps_0
+  - first:
+      213: -1390185716521105691
+    second: Fire_pit
+  - first:
+      213: 5971026140616055663
+    second: Hole
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1433,7 +1439,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_54
+      name: Ground_Hole_TL
       rect:
         serializedVersion: 2
         x: 0
@@ -1454,7 +1460,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_55
+      name: Ground_Hole_T
       rect:
         serializedVersion: 2
         x: 8
@@ -1475,7 +1481,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_56
+      name: Ground_Hole_TR
       rect:
         serializedVersion: 2
         x: 16
@@ -1496,7 +1502,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_57
+      name: Ground_Hole_TL_Corner
       rect:
         serializedVersion: 2
         x: 24
@@ -1538,7 +1544,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_59
+      name: Ground_Hole_TR_Corner
       rect:
         serializedVersion: 2
         x: 40
@@ -1622,7 +1628,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_63
+      name: Ground_Hole_L
       rect:
         serializedVersion: 2
         x: 0
@@ -1643,7 +1649,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_64
+      name: Ground_Hole_R
       rect:
         serializedVersion: 2
         x: 16
@@ -1790,7 +1796,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_71
+      name: Ground_Hole_BL
       rect:
         serializedVersion: 2
         x: 0
@@ -1811,7 +1817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_72
+      name: Ground_Hole_B
       rect:
         serializedVersion: 2
         x: 8
@@ -1832,7 +1838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_73
+      name: Ground_Hole_BR
       rect:
         serializedVersion: 2
         x: 16
@@ -1853,7 +1859,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_74
+      name: Ground_Hole_BL_Corner
       rect:
         serializedVersion: 2
         x: 24
@@ -1895,7 +1901,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World_Sheet_76
+      name: Ground_Hole_BR_Corner
       rect:
         serializedVersion: 2
         x: 40
@@ -2050,7 +2056,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2058,6 +2064,48 @@ TextureImporter:
       bones: []
       spriteID: ee234209bbacba760800000000000000
       internalID: 7470287313850086126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_pit
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e600f2d47115bce0800000000000000
+      internalID: -1390185716521105691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hole
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bddf793a85dd250800000000000000
+      internalID: 5971026140616055663
       vertices: []
       indices: 
       edges: []

@@ -34,7 +34,10 @@ public class Bush : Flammable
         base.TriggerBurned();
         
         if(!_burnedBush)
+        {
             _burnedBush = Instantiate(deadBushPrefab, transform.position, Quaternion.identity)
             .GetComponent<BurnedBush>();
+            _burnedBush.transform.parent = transform.parent;
+        }
     }
 }

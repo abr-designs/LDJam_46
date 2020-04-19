@@ -10,6 +10,9 @@ public class Flammable : Interactable, IFlammable
     private bool startBurned;
     [SerializeField] 
     private bool burnForever;
+
+    [SerializeField]
+    private bool fireSpreads;
     
     public bool onFire{get; private set;}
     protected bool burned{get; private set;}
@@ -60,6 +63,7 @@ public class Flammable : Interactable, IFlammable
 
         if(!burnForever)
             UpdateFire();
+        
     }
 
     protected virtual void OnCollisionEnter2D(Collision2D other)
@@ -87,13 +91,25 @@ public class Flammable : Interactable, IFlammable
     
     //================================================================================================================//
 
-    protected virtual void StarFire()
+    public virtual void StarFire()
     {
-        fire = Instantiate(firePrefab, transform.position, Quaternion.identity).GetComponent<Fire>();
+        if(burned || onFire)
+            return;
+
+        //Need to make sure its not creating multiple
+        if (!fire)
+        {
+            fire = Instantiate(firePrefab, transform.position, Quaternion.identity).GetComponent<Fire>();
+            fire.transform.parent = transform.parent;
+        }
+
         //TODO Countdown burn time, change color
 
         onFire = true;
         RegisterFlammable();
+
+        if (fireSpreads)
+            StartCoroutine(SpreadFireCoroutine(0.75f));
     }
 
     /// <summary>
@@ -129,8 +145,11 @@ public class Flammable : Interactable, IFlammable
         onFire = false;
         UnRegisterFlammable();
     }
+
+
     
     //================================================================================================================//
+    
     public bool isOnFire()
     {
         return onFire;
@@ -144,5 +163,31 @@ public class Flammable : Interactable, IFlammable
     public void UnRegisterFlammable()
     {
         LevelManager.UnRegisterFire(this);
+    }
+
+    private IEnumerator SpreadFireCoroutine(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+
+        var directions = new[]
+        {
+            Vector2.left,
+            Vector2.right,
+            Vector2.up,
+            Vector2.down,
+        };
+
+        foreach (var direction in directions)
+        {
+            var cast = Physics2D.Raycast(transform.position, direction, 0.8f);
+
+            if (cast.transform == null)
+                continue;
+
+            cast.transform.GetComponent<Flammable>()?.StarFire();
+
+        }
+
+
     }
 }

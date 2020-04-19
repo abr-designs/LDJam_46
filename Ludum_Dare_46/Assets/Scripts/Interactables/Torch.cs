@@ -16,7 +16,7 @@ public class Torch : Interactable, IFlammable
     [SerializeField]
     private Sprite outSprite;
 
-    public bool isLit { get; private set; }
+    public bool isLit;
     
     //================================================================================================================//
 
@@ -24,6 +24,8 @@ public class Torch : Interactable, IFlammable
     {
         if(!renderer)
             renderer = GetComponent<SpriteRenderer>();
+        
+        SetIsLit(isLit);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -41,6 +43,17 @@ public class Torch : Interactable, IFlammable
         CaveMan.canPickupTorch = null;
     }
     
+    private void SetIsLit(bool isLit)
+    {
+        this.isLit = isLit;
+        
+        if (isLit)
+            LevelManager.RegisterFire(this);
+        
+        renderer.sprite = isLit ? litSprite : outSprite;
+        
+    }
+    
     //================================================================================================================//
 
     public void Init(Collider2D ignoreCollider, bool isLit)
@@ -49,13 +62,9 @@ public class Torch : Interactable, IFlammable
 
         if (!renderer)
             renderer = GetComponent<SpriteRenderer>();
-        
-        
-        this.isLit = isLit;
-        renderer.sprite = isLit ? litSprite : outSprite;
 
-        if (isLit)
-            RegisterFlammable();
+
+        SetIsLit(isLit);
     }
     
     public bool isOnFire()
