@@ -35,8 +35,6 @@ public class Bush : Flammable
         if (!other.gameObject.CompareTag("Player")) 
             return;
         
-        Debug.Log($"Checking {!burned} || {onFire}");
-        
         if (!burned || onFire) 
             return;
         

@@ -80,7 +80,6 @@ public class Torch : Interactable, IFlammable
     
     private void SetIsLit(bool isLit)
     {
-        Debug.Log($"Set {isLit}");
         this.isLit = isLit;
         
         if (isLit)

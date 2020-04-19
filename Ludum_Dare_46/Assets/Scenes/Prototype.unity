@@ -805,6 +805,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 10a5daea13739ff409b2dc6e59ce2d79, type: 3}
   - {fileID: 8300000, guid: 511d808f711b6f946b504ac8aab305e2, type: 3}
   - {fileID: 8300000, guid: a7e590e3444711b40a4516eb3d3324eb, type: 3}
+  - {fileID: 8300000, guid: 33e33b045e5eba646b2e4d61d41f92c6, type: 3}
   _effectProfiles:
   - name: Walk
     pitchRange: {x: 0.9, y: 1.1}
@@ -822,6 +823,8 @@ MonoBehaviour:
     pitchRange: {x: 0.9, y: 1}
   - name: Beacon
     pitchRange: {x: 1, y: 1}
+  - name: Push Boulder
+    pitchRange: {x: 0.6, y: 1}
   masterMixer: {fileID: 24100000, guid: 5d1dd1622b72fa346ac21bea8586ac88, type: 2}
   musicSnapshots:
   - {fileID: 7025279702941005855, guid: 5d1dd1622b72fa346ac21bea8586ac88, type: 2}
@@ -922,7 +925,7 @@ MonoBehaviour:
   levelPrefabObject: {fileID: 1348691038}
   menuLevel: {fileID: 2662911353324482073}
   gameParentObject: {fileID: 580704977}
-  currentLevelIndex: 12
+  currentLevelIndex: 0
 --- !u!1 &1551649106
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ public class AudioManager : MonoBehaviour
         PUT_OUT,
         THROW,
         TO_ASH,
-        BEACON
+        BEACON,
+        PUSH,
         
     }
 

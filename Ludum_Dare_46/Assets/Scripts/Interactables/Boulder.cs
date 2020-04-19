@@ -75,7 +75,7 @@ public class Boulder : Interactable
     {
         //TODO Need to check if legal to move to next position
         var dir = new Vector3(direction.x, direction.y);
-        var test = Physics2D.Raycast(transform.position, dir, 0.4f);
+        var test = Physics2D.Raycast(transform.position, dir, 0.8f);
 
         if (test.transform)
             return;
@@ -83,7 +83,7 @@ public class Boulder : Interactable
         //TODO Move the rock in that direction
         //ignoreInput = true;
         //transform.position += dir * 0.4f;
-        var target = transform.position + dir * 0.4f;
+        var target = transform.position + dir * 0.8f;
         StartCoroutine(MoveBoulderCoroutine(target, 0.3f));
 
         lastInput = currentInput = Vector2Int.zero;
@@ -96,6 +96,7 @@ public class Boulder : Interactable
         var _t = 0f;
         var startPosition = transform.position;
         
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.PUSH, 0.3f);
         
         while (_t < time)
         {

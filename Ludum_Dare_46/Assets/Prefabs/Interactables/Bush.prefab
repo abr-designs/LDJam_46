@@ -50,7 +50,9 @@ MonoBehaviour:
   startBurned: 0
   burnForever: 0
   fireSpreads: 1
-  burnTime: 7
+  onFire: 0
+  burned: 0
+  burnTime: 4
   burnCurve:
     serializedVersion: 2
     m_Curve:
