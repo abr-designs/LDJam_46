@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 //Use this guide: https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system
 
-public class CaveManController : MonoBehaviour
+public class CaveManController : Interactable
 {
     public GameObject torchPrefab;
     public float throwForce;
@@ -128,6 +128,15 @@ public class CaveManController : MonoBehaviour
     }
 
     //================================================================================================================//
+    public void Reset()
+    {
+        facingRight = true;
+        facingCamera = true;
+        isHoldingTorch = true;
+        canPickupTorch = null;
+        isTorchLit = true;
+        SetIsHoldingTorch(isHoldingTorch);
+    }
 
     private void CheckInput()
     {
@@ -212,6 +221,9 @@ public class CaveManController : MonoBehaviour
             SetTorchLit(false);
         
         Animator.SetBool("InWater", inWater);
+        
+        //TODO We'll try and see if this plays too much
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.SPLASH);
     }
     
     //================================================================================================================//
@@ -231,10 +243,12 @@ public class CaveManController : MonoBehaviour
         
         var temp = Instantiate(torchPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
         temp.GetComponent<Torch>().Init(collider, isTorchLit);
+        LevelManager.SetParentToLevel(temp.transform);
         
         //TODO Move the force add to the torch object
         temp.AddForce(direction * throwForce);
         temp.AddTorque(Random.Range(0f, 0.3f) *(Random.value > 0.5f ? 1f : -1), ForceMode2D.Force);
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.THROW);
     }
 
     private void PickupTorch()
@@ -242,13 +256,16 @@ public class CaveManController : MonoBehaviour
         //isHoldingTorch = true;
         SetIsHoldingTorch(true);
         SetTorchLit(canPickupTorch.isLit);
-        
+
         Destroy(canPickupTorch.gameObject);
         canPickupTorch = null;
     }
 
     public void SetTorchLit(bool onFire)
     {
+        if(onFire)
+            AudioManager.PlaySoundEffect(AudioManager.EFFECT.GOT_FIRE);
+        
         isTorchLit = onFire;
 
         torchRenderer.sprite = isTorchLit ? litTorchSprite : outTorchSprite;

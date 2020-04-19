@@ -28,4 +28,17 @@ public class Interactable : MonoBehaviour
         }
     }
     private static LevelManager _levelManager;
+    
+    
+    protected static AudioManager AudioManager
+    {
+        get
+        {
+            if (!_audioManager)
+                _audioManager = FindObjectOfType<AudioManager>();
+
+            return _audioManager;
+        }
+    }
+    private static AudioManager _audioManager;
 }

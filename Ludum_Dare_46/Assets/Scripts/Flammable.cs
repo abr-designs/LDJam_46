@@ -110,6 +110,8 @@ public class Flammable : Interactable, IFlammable
 
         if (fireSpreads)
             StartCoroutine(SpreadFireCoroutine(0.75f));
+        
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.FIRE);
     }
 
     /// <summary>

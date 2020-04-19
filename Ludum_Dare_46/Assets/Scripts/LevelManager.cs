@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : Interactable
 {
     //================================================================================================================//
     [SerializeField]
@@ -94,6 +94,25 @@ public class LevelManager : MonoBehaviour
     
     //================================================================================================================//
 
+    [ContextMenu("Restart")]
+    public void RestartLevel()
+    {
+        _caveManController.Reset();
+        LoadLevel(currentLevelIndex);
+        
+    }
+
+    public void SetParentToLevel(Transform child)
+    {
+        if (!activeLevel)
+            return;
+
+        child.parent = activeLevel.transform;
+    }
+    
+    
+    //================================================================================================================//
+
     public void TryLoadNextLevel()
     {
             currentLevelIndex++;
@@ -109,12 +128,14 @@ public class LevelManager : MonoBehaviour
         if(activeLevel)
             unloadLevel();
 
+        var level = Levels[index];
+
         currentLevelIndex = index;
         //Debug.Log(Levels[index].startPosition.position);
-        _caveManController.SetPosition(Levels[index].startPosition.position);
-        activeLevel = Instantiate(Levels[index].gameObject, gameParentObject.transform, true);
+        _caveManController.SetPosition(level.startPosition.position);
+        activeLevel = Instantiate(level.gameObject, gameParentObject.transform, true);
         
-        
+        AudioManager.PlayMusic(level.music);
         
         
         activeLevel.SetActive(true);

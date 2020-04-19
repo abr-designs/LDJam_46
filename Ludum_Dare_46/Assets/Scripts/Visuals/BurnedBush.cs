@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BurnedBush : MonoBehaviour, ITreeFaded
+public class BurnedBush : Interactable, ITreeFaded
 {
     private Action OnBushFadedCallback;
 
@@ -18,6 +18,8 @@ public class BurnedBush : MonoBehaviour, ITreeFaded
     {
         this.OnBushFadedCallback = OnBushFadedCallback;
         _animator.SetFloat("Play", 1f);
+        
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.TO_ASH);
     }
     public void TreeFadedAnim()
     {
