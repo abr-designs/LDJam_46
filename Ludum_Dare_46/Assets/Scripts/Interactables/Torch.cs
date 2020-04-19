@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Torch : Interactable, IFlammable
 {
@@ -19,8 +20,8 @@ public class Torch : Interactable, IFlammable
     private Sprite outSprite;
 
     public bool isLit;
-    public LayerMask mask;
-    
+    public LayerMask waterMask;
+    public LayerMask pitMask;
     //================================================================================================================//
 
     private void Start()
@@ -43,13 +44,18 @@ public class Torch : Interactable, IFlammable
             return;
 
         //var colliders = new Collider2D[4];
-        if(rigidbody.IsTouchingLayers(mask.value))
+        if(rigidbody.IsTouchingLayers(waterMask.value))
             SetIsLit(false);
+        else if (rigidbody.IsTouchingLayers(pitMask.value))
+        {
+            SetIsLit(false);
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         
         if (!other.CompareTag("Player"))
             return;
@@ -74,6 +80,7 @@ public class Torch : Interactable, IFlammable
     
     private void SetIsLit(bool isLit)
     {
+        Debug.Log($"Set {isLit}");
         this.isLit = isLit;
         
         if (isLit)
@@ -98,11 +105,8 @@ public class Torch : Interactable, IFlammable
 
         SetIsLit(isLit);
     }
-    
-    public bool isOnFire()
-    {
-        return isLit;
-    }
+
+    public bool isOnFire => isLit;
 
     public void RegisterFlammable()
     {

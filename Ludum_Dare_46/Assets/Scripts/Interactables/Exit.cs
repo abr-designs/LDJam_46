@@ -13,7 +13,7 @@ public class Exit : Interactable
         _level = GetComponentInParent<Level>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
@@ -24,6 +24,9 @@ public class Exit : Interactable
 
     private void LoadNextLevel()
     {
+        if (!enabled)
+            return;
+        
         _level.LoadNext();
     }
 }

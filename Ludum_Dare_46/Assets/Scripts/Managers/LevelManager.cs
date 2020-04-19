@@ -76,7 +76,7 @@ public class LevelManager : Interactable
 
         if (activeFlammables != null && activeFlammables.Count > 0)
         {
-            if (activeFlammables.Any(activeFlammable => activeFlammable.isOnFire()))
+            if (activeFlammables.Any(activeFlammable => activeFlammable.isOnFire))
             {
                 fireExists = true;
                 return;
@@ -101,8 +101,6 @@ public class LevelManager : Interactable
             return;
         }
         
-        Debug.Log($"Registered {flammable}");
-        
         activeFlammables.Add(flammable);
     }
     public void UnRegisterFire(IFlammable flammable)
@@ -120,7 +118,10 @@ public class LevelManager : Interactable
     }
     
     //================================================================================================================//
-
+    public void ForceFailed()
+    {
+        HasFailed();
+    }
     private void HasFailed()
     {
         fireExists = false;

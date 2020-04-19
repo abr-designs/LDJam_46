@@ -16,7 +16,7 @@ Physics2DSettings:
   m_BaumgarteScale: 0.2
   m_BaumgarteTimeOfImpactScale: 0.75
   m_TimeToSleep: 0.5
-  m_LinearSleepTolerance: 0.01
+  m_LinearSleepTolerance: 0.05
   m_AngularSleepTolerance: 2
   m_DefaultContactOffset: 0.01
   m_JobOptions:
@@ -53,4 +53,4 @@ Physics2DSettings:
   m_ColliderAsleepColor: {r: 0.5686275, g: 0.95686275, b: 0.54509807, a: 0.36078432}
   m_ColliderContactColor: {r: 1, g: 0, b: 1, a: 0.6862745}
   m_ColliderAABBColor: {r: 1, g: 1, b: 0, a: 0.2509804}
-  m_LayerCollisionMatrix: c9ffffffc8f0ffffc8f0ffffffffffffd8fbffffc8f8ffffffffffffffffffffd9ffffffd9fbffffc9fdfffff9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  m_LayerCollisionMatrix: c9ffffffc8e0ffffc8e0ffffffffffffd8fbffffc8e8ffffffffffffffffffffd9ffffffd9fbffffc9fdfffff9ffffffd9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

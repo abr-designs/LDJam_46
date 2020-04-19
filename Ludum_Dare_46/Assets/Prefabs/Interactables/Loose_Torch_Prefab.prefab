@@ -54,10 +54,12 @@ MonoBehaviour:
   outSprite: {fileID: 4551398226287638650, guid: 63ff52572e57f8f4a870bb93a9111647,
     type: 3}
   isLit: 0
-  mask:
+  waterMask:
     serializedVersion: 2
     m_Bits: 16
-  touchingLayer: 0
+  pitMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!212 &8031701135004900354
 SpriteRenderer:
   m_ObjectHideFlags: 0

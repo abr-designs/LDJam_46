@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IFlammable
 {
-    bool isOnFire();
+    bool isOnFire { get; }
 
     void RegisterFlammable();
     void UnRegisterFlammable();

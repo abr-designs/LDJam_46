@@ -18,7 +18,7 @@ public class Flammable : Interactable, IFlammable
     [SerializeField]
     public bool onFire;
     [SerializeField]
-    protected bool burned;
+    public bool burned;
 
     //================================================================================================================//
     
@@ -165,11 +165,8 @@ public class Flammable : Interactable, IFlammable
 
     
     //================================================================================================================//
-    
-    public bool isOnFire()
-    {
-        return onFire;
-    }
+
+    public bool isOnFire => onFire;
 
     public void RegisterFlammable()
     {
