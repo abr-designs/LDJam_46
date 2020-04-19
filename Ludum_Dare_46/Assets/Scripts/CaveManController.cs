@@ -223,7 +223,7 @@ public class CaveManController : Interactable
         Animator.SetBool("InWater", inWater);
         
         //TODO We'll try and see if this plays too much
-        AudioManager.PlaySoundEffect(AudioManager.EFFECT.SPLASH);
+        AudioManager.PlaySoundEffect(AudioManager.EFFECT.SPLASH, 0.3f);
     }
     
     //================================================================================================================//

@@ -121,7 +121,7 @@ AudioMixerController:
   - guid: 8342e5794447ea24ab21e045ed509436
     name: MusicVolume
   - guid: e679e4f389b11e24d88ef70d14108da2
-    name: EffectVoume
+    name: EffectVolume
   - guid: c89a3d214a6c8234d8aacde2387a2654
     name: EffectPitch
   m_AudioMixerGroupViews:
@@ -134,7 +134,7 @@ AudioMixerController:
     - 0a54ecac295d33c4fb19a2f6b8668185
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 7025279702941005855}
+  m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: e8807f737b24862428292f37757c07c4
   m_FloatValues:
     754fb88357268c64e9ad09f6fa1d7af5: -80
-    e679e4f389b11e24d88ef70d14108da2: -0.10231405
+    e679e4f389b11e24d88ef70d14108da2: 0
     b4cf2696d1fa309459c1e1379468ea11: -80
   m_TransitionOverrides: {}
 --- !u!244 &1586730360941255866

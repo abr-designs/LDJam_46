@@ -10,6 +10,11 @@ public class LevelManager : Interactable
     //================================================================================================================//
     [SerializeField]
     private bool fireExists;
+
+    [SerializeField]
+    private bool startWithMenu;
+
+    [SerializeField] private Level menuLevel;
     
     private List<IFlammable> activeFlammables;
     private CaveManController _caveManController;
@@ -20,7 +25,7 @@ public class LevelManager : Interactable
     [SerializeField] 
     private int currentLevelIndex;
     [SerializeField]
-    private Level[] Levels;
+    private List<Level> Levels;
     private GameObject activeLevel;
     
     //================================================================================================================//
@@ -34,7 +39,10 @@ public class LevelManager : Interactable
         _caveManController = FindObjectOfType<CaveManController>();
         fireExists = true;
 
-        LoadLevel(currentLevelIndex);
+        if (startWithMenu)
+            LoadLevel(menuLevel);
+        else
+            LoadLevel(currentLevelIndex);
     }
 
     private void Update()
@@ -128,9 +136,24 @@ public class LevelManager : Interactable
         if(activeLevel)
             unloadLevel();
 
-        var level = Levels[index];
+        var level = index < 0 ? menuLevel : Levels[index];
 
         currentLevelIndex = index;
+        //Debug.Log(Levels[index].startPosition.position);
+        _caveManController.SetPosition(level.startPosition.position);
+        activeLevel = Instantiate(level.gameObject, gameParentObject.transform, true);
+        
+        AudioManager.PlayMusic(level.music);
+        
+        
+        activeLevel.SetActive(true);
+    }
+    private void LoadLevel(Level level)
+    {
+        if(activeLevel)
+            unloadLevel();
+
+        currentLevelIndex = -1;
         //Debug.Log(Levels[index].startPosition.position);
         _caveManController.SetPosition(level.startPosition.position);
         activeLevel = Instantiate(level.gameObject, gameParentObject.transform, true);
