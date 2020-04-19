@@ -136,6 +136,7 @@ public class CaveManController : Interactable
         canPickupTorch = null;
         isTorchLit = true;
         SetIsHoldingTorch(isHoldingTorch);
+        SetTorchLit(isTorchLit);
     }
 
     private void CheckInput()

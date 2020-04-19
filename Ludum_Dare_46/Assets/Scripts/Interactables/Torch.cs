@@ -42,6 +42,14 @@ public class Torch : Interactable, IFlammable
 
         CaveMan.canPickupTorch = null;
     }
+
+    private void OnDestroy()
+    {
+        UnRegisterFlammable();
+    }
+
+    //================================================================================================================//
+
     
     private void SetIsLit(bool isLit)
     {
@@ -79,6 +87,8 @@ public class Torch : Interactable, IFlammable
 
     public void UnRegisterFlammable()
     {
+        if (!LevelManager)
+            return;
         LevelManager.UnRegisterFire(this);
     }
 }

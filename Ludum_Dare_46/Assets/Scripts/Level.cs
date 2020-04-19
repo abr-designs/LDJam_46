@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Level : Interactable
 {
+    public bool isActive = true;
+    
     public string LevelName;
-    public int levelID;
+    // public int levelID;
 
     public bool startWithTorch = true;
 
@@ -14,11 +16,11 @@ public class Level : Interactable
 
     public Transform startPosition;
 
-    public int nextLevel;
+    //public int nextLevel;
 
     public void LoadNext()
     {
-        LevelManager.TryLoadLevel(nextLevel);
+        LevelManager.TryLoadNextLevel();
     }
 
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -88,7 +89,12 @@ public class Flammable : Interactable, IFlammable
         StarFire();
 
     }
-    
+
+    private void OnDestroy()
+    {
+        UnRegisterFlammable();
+    }
+
     //================================================================================================================//
 
     public virtual void StarFire()
@@ -164,6 +170,9 @@ public class Flammable : Interactable, IFlammable
 
     public void UnRegisterFlammable()
     {
+        if (!LevelManager)
+            return;
+        
         LevelManager.UnRegisterFire(this);
     }
 

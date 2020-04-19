@@ -11,8 +11,11 @@ public class LevelManager : Interactable
     [SerializeField]
     private bool fireExists;
 
-    [SerializeField]
-    private bool startWithMenu;
+    [SerializeField] 
+    private GameObject levelPrefabObject;
+
+    /*[SerializeField]
+    private bool startWithMenu;*/
 
     [SerializeField] private Level menuLevel;
     
@@ -24,7 +27,8 @@ public class LevelManager : Interactable
 
     [SerializeField] 
     private int currentLevelIndex;
-    [SerializeField]
+
+    
     private List<Level> Levels;
     private GameObject activeLevel;
     
@@ -32,21 +36,29 @@ public class LevelManager : Interactable
 
     private void Start()
     {
-        foreach (var level in Levels)
+        Levels = new List<Level>();
+        var levels = levelPrefabObject.GetComponentsInChildren<Level>(true);
+        foreach (var level in levels)
         {
             level.gameObject.SetActive(false);
+            
+            if(level.isActive)
+                Levels.Add(level);
         }
+
+
         _caveManController = FindObjectOfType<CaveManController>();
         fireExists = true;
 
-        if (startWithMenu)
-            LoadLevel(menuLevel);
-        else
-            LoadLevel(currentLevelIndex);
+
+        LoadLevel(currentLevelIndex);
     }
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+            RestartLevel();
+        
         //If we lost, dont keep checking
         if (!fireExists)
             return;
@@ -83,9 +95,11 @@ public class LevelManager : Interactable
 
         if (activeFlammables.Contains(flammable))
         {
-            Debug.LogError("Flammable already registered");
+            //Debug.LogError("Flammable already registered");
             return;
         }
+        
+        Debug.Log($"Registered {flammable}");
         
         activeFlammables.Add(flammable);
     }
@@ -93,9 +107,12 @@ public class LevelManager : Interactable
     {
         if (activeFlammables == null)
             return;
-        
-        if(!activeFlammables.Contains(flammable))
-            throw new Exception("Flammable was never registered");
+
+        if (!activeFlammables.Contains(flammable))
+        {
+            return;
+            //throw new Exception("Flammable was never registered");
+        }
         
         activeFlammables.Remove(flammable);
     }
@@ -126,10 +143,10 @@ public class LevelManager : Interactable
             currentLevelIndex++;
             LoadLevel(currentLevelIndex);
     }
-    public void TryLoadLevel(int index)
+    /*public void TryLoadLevel(int index)
     {
             LoadLevel(index);
-    }
+    }*/
     
     private void LoadLevel(int index)
     {
@@ -148,6 +165,9 @@ public class LevelManager : Interactable
         
         
         activeLevel.SetActive(true);
+
+        gameObject.name = $"[GAME MANAGER - LEVEL {index}]";
+
     }
     private void LoadLevel(Level level)
     {
