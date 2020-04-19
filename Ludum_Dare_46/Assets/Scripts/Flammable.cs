@@ -14,10 +14,12 @@ public class Flammable : Interactable, IFlammable
 
     [SerializeField]
     private bool fireSpreads;
-    
-    public bool onFire{get; private set;}
-    protected bool burned{get; private set;}
-    
+
+    [SerializeField]
+    public bool onFire;
+    [SerializeField]
+    protected bool burned;
+
     //================================================================================================================//
     
     [SerializeField] protected float burnTime;
@@ -50,6 +52,7 @@ public class Flammable : Interactable, IFlammable
         else if (startBurned)
         {
             TriggerBurned();
+            TriggerIsPassable();
             onFire = false;
         }
     }
@@ -129,7 +132,6 @@ public class Flammable : Interactable, IFlammable
         if (timer >= burnTime)
         {
             TriggerBurned();
-
             //TODO Change the sprite of the bush to burned one, disable collider
             fire.BurnOut(FireBurnedOut);
 
@@ -148,10 +150,16 @@ public class Flammable : Interactable, IFlammable
 
     }
 
+    protected virtual void TriggerIsPassable()
+    {
+        
+    }
+
     protected virtual void FireBurnedOut()
     {
         onFire = false;
         UnRegisterFlammable();
+        TriggerIsPassable();
     }
 
 

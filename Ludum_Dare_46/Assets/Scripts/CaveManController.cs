@@ -256,7 +256,7 @@ public class CaveManController : Interactable
     {
         //isHoldingTorch = true;
         SetIsHoldingTorch(true);
-        SetTorchLit(canPickupTorch.isLit);
+        SetTorchLit(!inWater && canPickupTorch.isLit);
 
         Destroy(canPickupTorch.gameObject);
         canPickupTorch = null;

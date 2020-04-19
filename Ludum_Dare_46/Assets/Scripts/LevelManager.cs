@@ -11,6 +11,8 @@ public class LevelManager : Interactable
     [SerializeField]
     private bool fireExists;
 
+    [SerializeField] private GameObject restartLevelBeaconPrefab;
+
     [SerializeField] 
     private GameObject levelPrefabObject;
 
@@ -82,7 +84,7 @@ public class LevelManager : Interactable
         }
 
         //TODO Trigger some event to say the level has failed
-        fireExists = false;
+        HasFailed();
         Debug.LogError("Nothing is on fire, you lose");
     }
     
@@ -119,10 +121,22 @@ public class LevelManager : Interactable
     
     //================================================================================================================//
 
+    private void HasFailed()
+    {
+        fireExists = false;
+        AudioManager.PlayMusic(AudioManager.MUSIC.NONE);
+
+        var temp = Instantiate(restartLevelBeaconPrefab, Levels[currentLevelIndex].startPosition.position,
+            Quaternion.identity);
+        
+        temp.transform.parent = activeLevel.transform;
+    }
+
     [ContextMenu("Restart")]
     public void RestartLevel()
     {
         _caveManController.Reset();
+        fireExists = true;
         LoadLevel(currentLevelIndex);
         
     }

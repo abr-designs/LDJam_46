@@ -10,8 +10,9 @@ public class Bush : Flammable
 
     private BurnedBush _burnedBush;
     
+    
 
-    protected override void OnCollisionEnter2D(Collision2D other)
+    /*protected override void OnCollisionEnter2D(Collision2D other)
     {
         base.OnCollisionEnter2D(other);
 
@@ -27,17 +28,42 @@ public class Bush : Flammable
         {
             Destroy(gameObject);
         });
+    }*/
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (!other.gameObject.CompareTag("Player")) 
+            return;
+        
+        Debug.Log($"Checking {!burned} || {onFire}");
+        
+        if (!burned || onFire) 
+            return;
+        
+        GetComponent<Collider2D>().enabled = false;
+        //TODO Play animation
+        _burnedBush.BreakBush(() =>
+        {
+            Destroy(gameObject);
+        });
     }
 
     protected override void TriggerBurned()
     {
         base.TriggerBurned();
+
+        if (_burnedBush) 
+            return;
         
-        if(!_burnedBush)
-        {
-            _burnedBush = Instantiate(deadBushPrefab, transform.position, Quaternion.identity)
+        _burnedBush = Instantiate(deadBushPrefab, transform.position, Quaternion.identity)
             .GetComponent<BurnedBush>();
-            _burnedBush.transform.parent = transform.parent;
-        }
+        _burnedBush.transform.parent = transform;
+        
+        
+    }
+
+    protected override void TriggerIsPassable()
+    {
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
     }
 }

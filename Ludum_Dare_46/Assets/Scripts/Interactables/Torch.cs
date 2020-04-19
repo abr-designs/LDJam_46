@@ -9,6 +9,8 @@ public class Torch : Interactable, IFlammable
     [SerializeField]
     private Collider2D rigidbodyCollider;
 
+    private new Rigidbody2D rigidbody;
+
     private new SpriteRenderer renderer;
 
     [SerializeField]
@@ -17,6 +19,7 @@ public class Torch : Interactable, IFlammable
     private Sprite outSprite;
 
     public bool isLit;
+    public LayerMask mask;
     
     //================================================================================================================//
 
@@ -25,11 +28,29 @@ public class Torch : Interactable, IFlammable
         if(!renderer)
             renderer = GetComponent<SpriteRenderer>();
         
+        if (!rigidbody)
+            rigidbody = GetComponent<Rigidbody2D>();
+        
         SetIsLit(isLit);
+    }
+
+    private void LateUpdate()
+    {
+        if (!isLit)
+            return;
+
+        if (!rigidbody.IsSleeping())
+            return;
+
+        //var colliders = new Collider2D[4];
+        if(rigidbody.IsTouchingLayers(mask.value))
+            SetIsLit(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.name);
+        
         if (!other.CompareTag("Player"))
             return;
 
@@ -70,6 +91,9 @@ public class Torch : Interactable, IFlammable
 
         if (!renderer)
             renderer = GetComponent<SpriteRenderer>();
+
+        if (!rigidbody)
+            rigidbody = GetComponent<Rigidbody2D>();
 
 
         SetIsLit(isLit);

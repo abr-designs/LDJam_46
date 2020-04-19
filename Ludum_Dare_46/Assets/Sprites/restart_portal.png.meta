@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: d0feab58945e9dc4fa53a1fc718b5825
+guid: 32050c92eeb9704428b535fea28bee1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6076065925754670426
-    second: Arrow_Up
+      213: -1200753247910374219
+    second: restart_portal_0
   - first:
-      213: -2665013462473649628
-    second: Slider_Top
+      213: 6666324852903397657
+    second: restart_portal_1
   - first:
-      213: 4466780716907612453
-    second: Arrow_Down
+      213: -8133645789678324073
+    second: restart_portal_2
   - first:
-      213: 6522251007206638573
-    second: Button_Small
+      213: -8392473763222731363
+    second: restart_portal_3
   - first:
-      213: 5500871050033689153
-    second: Button_L
+      213: -3290244782597023476
+    second: restart_portal_4
   - first:
-      213: -8229091110289179707
-    second: Button_Center
+      213: 7318322497838247483
+    second: restart_portal_5
   - first:
-      213: -5720669192706917941
-    second: Button_R
+      213: -794039884917018699
+    second: restart_portal_6
   - first:
-      213: -4476251193684948283
-    second: Arrow_Left
+      213: -884123871825703681
+    second: restart_portal_7
   - first:
-      213: 2159158867610246814
-    second: Slider_Middle
+      213: 3455959762218986322
+    second: restart_portal_8
   - first:
-      213: 3477309023556903391
-    second: Arrow_Right
+      213: 3163398392447224145
+    second: restart_portal_9
   - first:
-      213: 7610768158921809978
-    second: Slider_Bottom
-  - first:
-      213: -6553288742195770127
-    second: House
+      213: 6606443769037618102
+    second: restart_portal_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,7 +80,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -135,253 +132,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow_Up
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a2b98f9b3a7daba0800000000000000
-      internalID: -6076065925754670426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slider_Top
+      name: restart_portal_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422df9f2068f30bd0800000000000000
-      internalID: -2665013462473649628
+      spriteID: 5b4d76b6841165fe0800000000000000
+      internalID: -1200753247910374219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_Down
+      name: restart_portal_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 529c7d065613dfd30800000000000000
-      internalID: 4466780716907612453
+      spriteID: 9194aae422b838c50800000000000000
+      internalID: 6666324852903397657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Small
+      name: restart_portal_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7963f598f3c7f1f80800000000000000
+      internalID: -8133645789678324073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restart_portal_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95c25cd391f78b80800000000000000
+      internalID: -8392473763222731363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restart_portal_4
       rect:
         serializedVersion: 2
         x: 40
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de34c741cb0b38a50800000000000000
-      internalID: 6522251007206638573
+      spriteID: c09d83d7dc3b652d0800000000000000
+      internalID: -3290244782597023476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_L
+      name: restart_portal_5
       rect:
         serializedVersion: 2
         x: 48
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 142fc7c3315075c40800000000000000
-      internalID: 5500871050033689153
+      spriteID: b3ee563a987ef8560800000000000000
+      internalID: 7318322497838247483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Center
+      name: restart_portal_6
       rect:
         serializedVersion: 2
         x: 56
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb73ea1c356ccd80800000000000000
-      internalID: -8229091110289179707
+      spriteID: 5bf67028ee00bf4f0800000000000000
+      internalID: -794039884917018699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_R
+      name: restart_portal_7
       rect:
         serializedVersion: 2
         x: 64
-        y: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc9fe2bbda91c90b0800000000000000
-      internalID: -5720669192706917941
+      spriteID: ffcc26ad506fab3f0800000000000000
+      internalID: -884123871825703681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_Left
+      name: restart_portal_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 72
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca8dfa614921e1c0800000000000000
-      internalID: -4476251193684948283
+      spriteID: 25b2b11e71906ff20800000000000000
+      internalID: 3455959762218986322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slider_Middle
+      name: restart_portal_9
       rect:
         serializedVersion: 2
-        x: 8
-        y: 64
+        x: 80
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e1b85ec8fd6fd10800000000000000
-      internalID: 2159158867610246814
+      spriteID: 159cbd8d316a6eb20800000000000000
+      internalID: 3163398392447224145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_Right
+      name: restart_portal_10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 88
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd1ae532222e14030800000000000000
-      internalID: 3477309023556903391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slider_Bottom
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 56
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3063642151ee9960800000000000000
-      internalID: 7610768158921809978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: House
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 29
-        width: 24
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fccada1c9a0e05a0800000000000000
-      internalID: -6553288742195770127
+      spriteID: 6bb74120b9dceab50800000000000000
+      internalID: 6606443769037618102
       vertices: []
       indices: 
       edges: []
@@ -389,7 +365,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 50e49ee446ea00c48beea40f100310c7
     internalID: 0
     vertices: []
     indices: 

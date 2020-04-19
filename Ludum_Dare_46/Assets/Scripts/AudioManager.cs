@@ -15,7 +15,8 @@ public class AudioManager : MonoBehaviour
         GOT_FIRE,
         PUT_OUT,
         THROW,
-        TO_ASH
+        TO_ASH,
+        BEACON
         
     }
 
@@ -70,21 +71,23 @@ public class AudioManager : MonoBehaviour
         switch (music)
         {
             case MUSIC.NONE:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 0f, 1f}, 2f);
                 break;
             case MUSIC.JUNGLE:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{1f,0f,0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{1f,0f,0f, 0f}, 2f);
                 break;
             case MUSIC.DESERT:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,1f,0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,1f,0f, 0f}, 2f);
                 break;
             case MUSIC.MENU:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,0f,1f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,0f,1f, 0f}, 2f);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(music), music, null);
         }
-        
+
+        currentMusic = music;
+
     }
 
     //================================================================================================================//
