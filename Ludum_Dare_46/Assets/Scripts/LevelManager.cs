@@ -141,6 +141,7 @@ public class LevelManager : Interactable
         currentLevelIndex = index;
         //Debug.Log(Levels[index].startPosition.position);
         _caveManController.SetPosition(level.startPosition.position);
+        _caveManController.SetIsHoldingTorch(level.startWithTorch);
         activeLevel = Instantiate(level.gameObject, gameParentObject.transform, true);
         
         AudioManager.PlayMusic(level.music);
@@ -156,6 +157,7 @@ public class LevelManager : Interactable
         currentLevelIndex = -1;
         //Debug.Log(Levels[index].startPosition.position);
         _caveManController.SetPosition(level.startPosition.position);
+        _caveManController.SetIsHoldingTorch(level.startWithTorch);
         activeLevel = Instantiate(level.gameObject, gameParentObject.transform, true);
         
         AudioManager.PlayMusic(level.music);
@@ -170,6 +172,7 @@ public class LevelManager : Interactable
 
     private void unloadLevel()
     {
+        //Debug.Log($"Unload {activeLevel.name}");
         Destroy(activeLevel);
     }
 

@@ -228,7 +228,7 @@ public class CaveManController : Interactable
     
     //================================================================================================================//
 
-    private void SetIsHoldingTorch(bool isHoldingTorch)
+    public void SetIsHoldingTorch(bool isHoldingTorch)
     {
         this.isHoldingTorch = isHoldingTorch;
         
