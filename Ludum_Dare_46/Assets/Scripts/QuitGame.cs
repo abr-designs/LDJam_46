@@ -11,8 +11,12 @@ public class QuitGame : Interactable
         if (!other.CompareTag("Player"))
             return;
 
+        #if UNITY_WEBGL
+        LevelManager.RestartGame();
+        #else
         if (CaveMan.isHoldingTorch && CaveMan.isTorchLit)
             Application.Quit();
+        #endif
     }
 
 }

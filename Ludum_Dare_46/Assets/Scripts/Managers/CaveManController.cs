@@ -75,6 +75,8 @@ public class CaveManController : Interactable
     public Vector2Int moveDirection => _moveDirection;
     public Vector2Int _moveDirection;
 
+    public Vector2 CurrentPosition => transform.position;
+
 
     //================================================================================================================//
     
@@ -173,7 +175,14 @@ public class CaveManController : Interactable
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            _moveDirection.x = 0;
+            //_moveDirection.x = 0;
+            if (Input.GetKey(KeyCode.D))
+            {
+                facingRight = true;
+                throwDirection = Vector2.right;
+                _moveDirection.x = 1;
+                
+            } else _moveDirection.x = 0;
         }
         
         if (Input.GetKeyDown(KeyCode.D))
@@ -184,9 +193,17 @@ public class CaveManController : Interactable
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            _moveDirection.x = 0;
+            //_moveDirection.x = 0;
+            if (Input.GetKey(KeyCode.A))
+            {
+                facingRight = false;
+                throwDirection = Vector2.left;
+                _moveDirection.x = -1;
+                
+            } else _moveDirection.x = 0;
         }
     }
+    
 
     private void ApplyMotion()
     {

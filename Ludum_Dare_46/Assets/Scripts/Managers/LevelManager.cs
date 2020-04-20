@@ -33,7 +33,7 @@ public class LevelManager : Interactable
     
     private List<Level> Levels;
     private GameObject activeLevel;
-    
+
     //================================================================================================================//
 
     private void Start()
@@ -58,6 +58,8 @@ public class LevelManager : Interactable
 
     private void Update()
     {
+        CheckForOutOfBounds();
+        
         if(Input.GetKeyDown(KeyCode.Escape))
             RestartLevel();
         
@@ -118,6 +120,16 @@ public class LevelManager : Interactable
     }
     
     //================================================================================================================//
+
+    private void CheckForOutOfBounds()
+    {
+        var currentPos = _caveManController.CurrentPosition;
+
+        if (Mathf.Abs(currentPos.x) > 7.5f || Mathf.Abs(currentPos.y) > 7.5f)
+            RestartLevel();
+        
+    }
+    
     public void ForceFailed()
     {
         HasFailed();
@@ -138,6 +150,15 @@ public class LevelManager : Interactable
     {
         _caveManController.Reset();
         fireExists = true;
+        LoadLevel(currentLevelIndex);
+        
+    }
+    
+    public void RestartGame()
+    {
+        _caveManController.Reset();
+        fireExists = true;
+        currentLevelIndex = 0;
         LoadLevel(currentLevelIndex);
         
     }
