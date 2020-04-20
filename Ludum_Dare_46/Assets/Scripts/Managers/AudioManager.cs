@@ -27,7 +27,8 @@ public class AudioManager : MonoBehaviour
         NONE,
         MENU,
         JUNGLE,
-        DESERT
+        DESERT,
+        HOME,
     }
 
     [Serializable]
@@ -71,17 +72,21 @@ public class AudioManager : MonoBehaviour
 
         switch (music)
         {
-            case MUSIC.NONE:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 0f, 1f}, 2f);
-                break;
+
             case MUSIC.JUNGLE:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{1f,0f,0f, 0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{1f, 0f, 0f, 0f, 0f}, 2f);
                 break;
             case MUSIC.DESERT:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,1f,0f, 0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 1f, 0f, 0f, 0f}, 2f);
                 break;
             case MUSIC.MENU:
-                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f,0f,1f, 0f}, 2f);
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 1f, 0f, 0f}, 2f);
+                break;
+            case MUSIC.NONE:
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 0f, 1f, 0f}, 2f);
+                break;
+            case MUSIC.HOME:
+                masterMixer.TransitionToSnapshots(musicSnapshots, new []{0f, 0f, 0f, 0f, 1f}, 2f);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(music), music, null);
