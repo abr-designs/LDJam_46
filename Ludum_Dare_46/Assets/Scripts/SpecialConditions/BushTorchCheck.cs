@@ -20,9 +20,13 @@ public class BushTorchCheck : Interactable
       if (CaveMan.isHoldingTorch && CaveMan.isTorchLit)
          return;
 
-      if (_bushes.Any(t => t.isOnFire || t.burned))
+      foreach (var bush in _bushes)
       {
-         return;
+         if (bush == null)
+            continue;
+
+         if (bush.isOnFire)
+            return;
       }
 
       _torches = FindObjectsOfType<Torch>();
@@ -31,6 +35,8 @@ public class BushTorchCheck : Interactable
       {
          return;
       }
+
+      
 
       Failed();
    }
